@@ -1,34 +1,83 @@
-/*check out css zen garden. click on different designs to change look of the site*/
+
 body {
-  font-family: 'helvetica neue', arial, sans-serif;
-  font-weight: 300;
-  background-image: url(linedpaper.png);
-  background-repeat: repeat;
+  margin-top: 30px;
 }
-#wrapper {
-  width: 960px;
-  margin: 20px auto 20px auto;
+
+.jumbotron1  {
+  font-style: 'Oswald', sans-serif;
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 25px;
+  border-radius: 5px;
+  padding-top: 25px;
+  text-shadow: 2px 2px 2px black;
+  width: 100%;
+  height: 100%;
+  background-image: url("bean.JPG");
+  background-size: 100% 100%;
+  }
+.jumbotron {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  background-image: url("chicago.JPG");
+  background-size: 100% 100%;
 }
-h1{
-  color: red;
+.jumbotron2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  height: 300px;
+  width: 1000px;
+  background-image: url("fintech.JPG");
+  background-size: 100% 100%;
 }
-h4{
-  color: purple;
+.row  {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 20px 0px 0px;
+  }
+
+.row1  {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 20px 0px 0px;
+  }
+
+.fintech  {
+  background-image: url("fintech.JPG");
+  width: 275px;
+  height: 200px;
+  background-size: 100% 100%;
+  }
+.insurance  {
+  background-image: url("insurance.JPG");
+  background-size: 100% 100%;
+  width: 275px;
+  height: 200px;
+  }
+.realestate  {
+  background-image: url("realestate.JPG");
+  background-size: 100% 100%;
+  width: 275px;
+  height: 200px;
+  }
+.consumerables  {
+  background-image: url("consumerables.JPG");
+  background-size: 100% 100%;
+  width: 275px;
+  height: 200px;
+  }
+span.centerImage  {
+  margin-left: 100px;
 }
-#summary {
-  color: green;
+.actors li {
+  line-height: 24px;
 }
-.skills-and-hobbies{
-  color: orange;
-}
-.jobs{
-  border-style: solid;
-  border-color: red;
-}
-#name{
-  text-shadow: 1px 1px 1px black;
-}
-#city{
-  font-weight: bold;
-  text-decoration: underline;
+.review {
+  margin-bottom: 30px;
 }

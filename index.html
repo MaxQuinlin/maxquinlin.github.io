@@ -1,70 +1,106 @@
 <!DOCTYPE html>
 <html>
+<!-- Must be named index.html
+Structure for website
+*Hot Chicago-based startups
+  jumbotron of Chicago (panoramic)
+  link to style1.css
+    background-image: url("ChicagoPano.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  click-able grid with: consumerables, real-estate, cybersecurity, blockchain(?), big data, healthcare IT
+    finds pictures for all pick top three or four
+    email Maks about how to link the pages or use slack
+ -->
 <head>
-  <title>Max Quinlin, Student</title>
+  <title>Chicago Startups</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!--  CSS is evaluated from the top down.  Whatever is on the bottom takes precedence-->
+  <!--  flips back and forth called a carousel-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
-  <div id="wrapper">
-    <h1 id="name">Max D. Quinlin</h1>
-    <p>
-      <!-- image has src tag and doesn't have a closing -->
-      <!-- a clickable image, nest <a href > <img src> </a> -->
-      <img src="MaxPhoto.jpg">
-    </p>
-    <h3>Student</h3>
-    <h3 id= "city">Pittsburgh, PA</h3>
-    <div>
-      <!-- div is generic block level element doesn't really look lke anything -->
-      <!-- div uniquelly defines an element, multiple elements can have the same class but can't have the same ID -->
-      <h4>Connect With Me</h4>
-      <ul>
-        <!-- These are bullets -->
-        <!-- a is attribute and use href -->
-        <li><a href="mailto:mquinlin2017@kellogg.northwestern.edu">Email</a></li>
-        <li><a href="http://twitter.com/maxquinlin">Twitter</a></li>
-        <li><a href="http://facebook.com/max.quinlin.7">Facebook</a></li>
-      </ul>
-      </div>
-    <div>
-      <h4 id="summary">Summary</h4>
-      <!-- does not have to be summary, can be any name -->
-      <p>
-        Max studied at the Univeristy of Pittsburgh, where he majored in finance.
-      </p>
-    </div>
-    <div>
-      <h4>Experience</h4>
-      <div>
-        <h5 class= "jobs">FX Sales, Bank of New Ybork Mellon</h5>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <i class="fa fa-apple" aria-hidden="true"></i>
         </div>
-      <div>
-        <h5 class= "jobs">FX Analyst, Freepoint Commodities</h5>
-        </div>
-      <div>
-        <h5 class= "jobs">CFO, Tanaka Capital</h5>
-            </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="file:///C:/Users/Max/Documents/Kellogg/Software%20Development/Code/maxquinlin.github.io/index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="http://techcrunc.com">TechCrunch <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="http://crunchbase.com">Crunchbase <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="http://wired.com">Wired <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="http://inc.com/inc5000">Inc. 5000 <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="http://builtinchicago.com">Chicago <span class="sr-only">(current)</span></a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+      <div class="jumbotron">
+      <link rel="stylesheet" href="style.css">
+      <h2> <center> <b> Chicago's Hottest Startups</h2>
+      </div>
+
+  <a class="btn btn-info" href="http://www.builtinchicago.org/2015/02/04/50-chicago-startups-watch-2015">2015 Top 50 Startups to Watch</a>
+  <a class="btn btn-info" href="http://www.builtinchicago.org/2016/01/26/top-50-chicago-startups-watch-2016">2016 Top 50 Startups to Watch</a>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <div class= "fintech"
+        <li>
+          <a href="file:///C:/Users/Max/Documents/Kellogg/Software%20Development/Code/maxquinlin.github.io/fintech.html">FinTech</a>
+        </li>
+      </div>
     </div>
-    <div>
-      <h4 class= "skills-and-hobbies">Skills</h4>
-      <ul>
-        <li>Finance</li>
-        <li>Accounting</li>
-        <li>Sales</li>
-      </ul>
+    <div class="col-sm-3">
+      <div class="insurance"
+        <li>
+          <a href="file:///C:/Users/Max/Documents/Kellogg/Software%20Development/Code/maxquinlin.github.io/insurance.html">Insurance</a>
+        </li>
+      </div>
     </div>
-    <div>
-      <h4 class= "skills-and-hobbies">Hobbies</h4>
-      <ul>
-        <li>Pittsburgh sports</li>
-        <li>Skiing</li>
-        <li>Tottenham Hotspurs</li>
-        <li>Tech news and innovation</li>
-      </ul>
+    <div class="col-sm-3">
+      <div class="realestate"
+        <li>
+          <a href="file:///C:/Users/Max/Documents/Kellogg/Software%20Development/Code/maxquinlin.github.io/realestate.html">Real Estate</a>
+        </li>
+      </div>
     </div>
+    <div class="col-sm-3">
+      <div class="consumerables"
+        <li>
+          <a href="file:///C:/Users/Max/Documents/Kellogg/Software%20Development/Code/maxquinlin.github.io/consumerables.html">Consumerables</a>
+        </li>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron1">
+    <link rel="stylesheet" href="style.css">
+      <p> <left>It’s not better or worse than communities on the coasts, just smaller and earlier-stage. There’s a lot of burgeoning growth in Chicago, which is as good a case as any for talented professionals to stay put</p>
+      <p> </p>
+      <p> <left>Jason Rowley, mattermark </p>
   </div>
 </body>
 </html>
